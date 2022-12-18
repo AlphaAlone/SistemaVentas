@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="244.0" prefWidth="368.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17" fx:controller="sistemaventas.view.FXMLModalAddProductoController">
+   <children>
+      <Label fx:id="lblVenta" layoutX="39.0" layoutY="42.0" text="Seleccione el producto a vender">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="cboxProducto" layoutX="39.0" layoutY="87.0" prefWidth="150.0" />
+      <Label fx:id="lblPrecio" layoutX="198.0" layoutY="87.0" text="Precio">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCantidad" layoutX="198.0" layoutY="124.0" onKeyReleased="#keyReleCantidad" prefHeight="25.0" prefWidth="97.0" />
+      <Label fx:id="lblCantidad" layoutX="109.0" layoutY="122.0" text="Cantidad">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Text fx:id="lblActualmente" layoutX="119.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Actualmente en inventario" />
+      <Button fx:id="btnAgregarVenta" layoutX="121.0" layoutY="177.0" mnemonicParsing="false" onAction="#accionAgregarVenta" text="Agregar a Venta" />
+      <Button fx:id="btnCancelar" layoutX="228.0" layoutY="177.0" mnemonicParsing="false" onAction="#accionCancelar" prefHeight="25.0" prefWidth="102.0" text="Cancelar" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sistemaventas.view.FXMLVentasController">
+   <children>
+      <Button fx:id="btnAgregarP" layoutX="34.0" layoutY="132.0" mnemonicParsing="false" onAction="#accionAgregarP" prefHeight="31.0" prefWidth="169.0" text="Agregar Producto">
+         <font>
+            <Font size="15.0" />
+         </font></Button>
+      <Label fx:id="lblVenta" layoutX="34.0" layoutY="32.0" text="Venta #">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblFecha" layoutX="34.0" layoutY="62.0" text="Fecha">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblUsuario" layoutX="34.0" layoutY="94.0" text="Usuario">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTotalVenta" layoutX="382.0" layoutY="94.0" text="Total Venta">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tablVenta" layoutX="34.0" layoutY="171.0" prefHeight="200.0" prefWidth="530.0">
+        <columns>
+          <TableColumn fx:id="colIdProducto" prefWidth="75.0" text="Id Producto" />
+          <TableColumn fx:id="colProducto" prefWidth="187.0" text="Producto" />
+            <TableColumn fx:id="colPreUni" prefWidth="103.0" text="Precio Unitario" />
+            <TableColumn fx:id="colCantidad" prefWidth="76.0" text="Cantidad" />
+            <TableColumn fx:id="colTotal" prefWidth="88.0" text="Total" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnGnrTPagar" layoutX="395.0" layoutY="132.0" mnemonicParsing="false" onAction="#accionTicket" text="Generar Ticket y Pagar">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

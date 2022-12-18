@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="SistemaVentas.jnlp">
+  <information>
+    <title>SistemaVentas</title>
+    <vendor>presi</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="SistemaVentas.jar" size="28191" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.24-bin.jar" size="846263" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="SistemaVentas" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="sistemaventas.SistemaVentas"  name="SistemaVentas" />
+  <update check="always"/>
+</jnlp>
